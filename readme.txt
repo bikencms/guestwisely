@@ -13,11 +13,8 @@ Plugin for 365villas WordPress Sites.
 A plugin to embed various controls via shortcodes that interact with the 365villas API.
 
 == Changelog ==
-= 2.8.1 =
-* change version
-
-= 2.8.0 =
-* change version
+= 2.8.3 =
+* Redirect search page when 404
 
 = 2.7.46 =
 * Redirect search page when 404
