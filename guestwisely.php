@@ -76,31 +76,34 @@ require plugin_dir_path( __FILE__ ) . 'includes/API365/Helpers365.php';
 //Ver 5
 //Add the update checker.
 // require plugin_dir_path( __FILE__ ) . 'includes/plugin-update-checker-5.6/plugin-update-checker.php';
-// use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+// use YahnisElsts\PluginUpdateChecker\v5p6\Vcs\PluginUpdateChecker;
+// use YahnisElsts\PluginUpdateChecker\v5p6\Vcs\GitLabApi;
 
-// $myUpdateChecker = PucFactory::buildUpdateChecker(
-// 	'https://github.com/bikencms/guestwisely',
+// $myUpdateChecker = new PluginUpdateChecker(
+// 	new GitLabApi('https://gitlab.guestwisely.io:8443/365villas/guestwisely-plugin/'),
 // 	__FILE__,
-// 	'guestwisely'
+// 	'guestwisely-plugin'
 // );
 
 // //Set the branch that contains the stable release.
-// $myUpdateChecker->setBranch('stable-branch-name');
+// $myUpdateChecker->setBranch('main');
 
 // //Optional: If you're using a private repository, specify the access token like this:
-// $myUpdateChecker->setAuthentication('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');
+// $myUpdateChecker->setAuthentication('glpat-VgxGXykxfa1sBH-nfvYz');
 
 //Ver 4
-require plugin_dir_path( __FILE__ ) . 'includes/plugin-update-checker/plugin-update-checker.php';
+// require plugin_dir_path( __FILE__ ) . 'includes/plugin-update-checker/plugin-update-checker.php';
 
-$checkerClass = Puc_v4_Factory::getLatestClassVersion('Vcs_PluginUpdateChecker'); // \Puc_v4p11_Vcs_PluginUpdateChecker
-$apiClass = str_replace('Vcs_PluginUpdateChecker', 'Vcs_GitHubApi', $checkerClass); // \Puc_v4p11_Vcs_GitLabApi
-$myUpdateChecker = new $checkerClass(
-    new $apiClass('https://github.com/bikencms/guestwisely'),
-		__FILE__,
-		'guestwisely'
-);
-$myUpdateChecker->setAuthentication('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');
+// $checkerClass = Puc_v4_Factory::getLatestClassVersion('Vcs_PluginUpdateChecker'); // \Puc_v4p11_Vcs_PluginUpdateChecker
+// $apiClass = str_replace('Vcs_PluginUpdateChecker', 'Vcs_GitHubApi', $checkerClass); // \Puc_v4p11_Vcs_GitLabApi
+// $myUpdateChecker = new $checkerClass(
+//     new $apiClass('https://github.com/bikencms/guestwisely'),
+// 		__FILE__,
+// 		'guestwisely'
+// );
+// $myUpdateChecker->setAuthentication('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');
+
+require plugin_dir_path( __FILE__ ) . 'includes/update-checker.php';
 
 /**
  * Begins execution of the plugin.
