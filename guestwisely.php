@@ -10,17 +10,17 @@
  *
  * @link              https://guestwisely.io
  * @since             2.8
- * @package           Guestwisely plugin
+ * @package           Guestwisely
  *
  * @wordpress-plugin
- * Plugin Name:       Guestwisely plugin
+ * Plugin Name:       Guestwisely
  * Plugin URI:        https://guestwisely.io
  * Description:       Adds various functions related to Guestwisely.
  * Version:           2.8
  * Author:            Guestwisely
  * Author URI:        https://guestwisely.io
  * License:           Copyright (C) 2025 Guestwisely.
- * Text Domain:       guestwisely-plugin
+ * Text Domain:       guestwisely
  * Domain Path:       /languages
  */
 
