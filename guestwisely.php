@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://guestwisely.io
- * @since             2.8
+ * @since             2.8.6
  * @package           Guestwisely
  *
  * @wordpress-plugin
  * Plugin Name:       Guestwisely
  * Plugin URI:        https://guestwisely.io
  * Description:       Adds various functions related to Guestwisely.
- * Version:           2.8
+ * Version:           2.8.6
  * Author:            Guestwisely
  * Author URI:        https://guestwisely.io
  * License:           Copyright (C) 2025 Guestwisely.
@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'VILLAS_365_VERSION',  '2.8' );
+define( 'VILLAS_365_VERSION',  '2.8.6' );
 
 define( 'VILLAS_365_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'VILLAS_365_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
